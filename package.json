@@ -1,5 +1,5 @@
 {
-  "name": "components",
+  "name": "@terenceodonoghue/components",
   "packageManager": "yarn@3.2.0",
   "private": true,
   "workspaces": [
