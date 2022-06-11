@@ -1,4 +1,14 @@
 {
   "name": "@terenceodonoghue/react-components",
+  "dependencies": {
+    "@terenceodonoghue/web-components": "workspace:^"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
   "packageManager": "yarn@3.2.0"
 }
