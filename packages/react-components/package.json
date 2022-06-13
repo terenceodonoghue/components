@@ -1,5 +1,9 @@
 {
   "name": "@terenceodonoghue/react-components",
+  "version": "0.0.0",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts,.tsx --ignore-path ../../.eslintignore --max-warnings=0 ./"
+  },
   "dependencies": {
     "@terenceodonoghue/web-components": "workspace:^"
   },
