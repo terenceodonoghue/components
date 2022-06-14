@@ -9,8 +9,10 @@
   "license": "MIT",
   "author": "Terence O'Donoghue <1697905+terenceodonoghue@users.noreply.github.com>",
   "exports": {
+    ".": "./dist/register.js",
     "./velocity": "./dist/velocity/index.js"
   },
+  "types": "./dist/register.d.ts",
   "typesVersions": {
     "*": {
       "velocity": [

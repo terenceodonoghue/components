@@ -21,38 +21,40 @@ template.innerHTML = `
     ::slotted(button:hover) {
       background-color: ${darken(0.2, '#2E5BFF')};
     }
+
+    ::slotted(button:disabled) {
+      opacity: 0.3;
+      pointer-events: none;
+    }
   </style>
 
   <slot name="button"></slot>
 `;
 
-customElements.define(
-  'wc-button',
-  class extends HTMLElement {
-    constructor() {
-      super();
+export default class extends HTMLElement {
+  constructor() {
+    super();
 
-      this.attachShadow({ mode: 'open' });
-      this.shadowRoot?.appendChild(template.content.cloneNode(true));
+    this.attachShadow({ mode: 'open' });
+    this.shadowRoot?.appendChild(template.content.cloneNode(true));
 
-      const gstatic = document.createElement('link');
-      const googleapis = document.createElement('link');
-      const stylesheet = document.createElement('link');
+    const gstatic = document.createElement('link');
+    const googleapis = document.createElement('link');
+    const stylesheet = document.createElement('link');
 
-      gstatic.rel = 'preconnect';
-      gstatic.href = 'https://fonts.gstatic.com';
-      gstatic.crossOrigin = 'true';
+    gstatic.rel = 'preconnect';
+    gstatic.href = 'https://fonts.gstatic.com';
+    gstatic.crossOrigin = 'true';
 
-      googleapis.rel = 'preconnect';
-      googleapis.href = 'https://fonts.googleapis.com';
+    googleapis.rel = 'preconnect';
+    googleapis.href = 'https://fonts.googleapis.com';
 
-      stylesheet.rel = 'stylesheet';
-      stylesheet.href =
-        'https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap';
+    stylesheet.rel = 'stylesheet';
+    stylesheet.href =
+      'https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap';
 
-      [gstatic, googleapis, stylesheet].forEach((link) =>
-        document.head.appendChild(link),
-      );
-    }
-  },
-);
+    [gstatic, googleapis, stylesheet].forEach((link) =>
+      document.head.appendChild(link),
+    );
+  }
+}
