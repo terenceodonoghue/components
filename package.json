@@ -12,6 +12,7 @@
     "@changesets/cli": "^2.22.0",
     "@terenceodonoghue/eslint-config-react": "^1.0.0",
     "@terenceodonoghue/prettier-plugin-packagejson": "^1.0.1",
+    "@types/react": "^18.0.14",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "eslint": "^8.11.0",

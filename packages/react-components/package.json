@@ -1,13 +1,29 @@
 {
   "name": "@terenceodonoghue/react-components",
   "version": "0.0.0",
+  "exports": {
+    "./velocity": "./dist/velocity/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      "velocity": [
+        "./dist/velocity/index.d.ts"
+      ]
+    }
+  },
   "scripts": {
-    "lint": "eslint --ext .js,.ts,.tsx --ignore-path ../../.eslintignore --max-warnings=0 ./"
+    "build": "tsc",
+    "clean": "rimraf ./dist",
+    "lint": "eslint --ext .js,.ts,.tsx --ignore-path ../../.eslintignore --max-warnings=0 ./",
+    "prepack": "yarn build",
+    "prepublish": "yarn lint"
   },
   "dependencies": {
     "@terenceodonoghue/web-components": "workspace:^"
   },
   "devDependencies": {
+    "eslint": "^8.17.0",
+    "rimraf": "^3.0.2",
     "typescript": "^4.7.3"
   },
   "peerDependencies": {
