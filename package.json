@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "release": "yarn nx run-many --target=prepack --all && changeset publish"
+    "release": "yarn nx run-many --target=build-publishable-release --all && yarn nx run-many --target=prepack --all && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.23.0",

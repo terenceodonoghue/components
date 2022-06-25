@@ -11,8 +11,12 @@
       ]
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
+    "build-publishable-release": "rimraf ./_release && yarn pack && mkdir ./_release && tar zxvf ./package.tgz --directory ./_release && rm ./package.tgz",
     "clean": "rimraf ./dist",
     "lint": "eslint --ext .js,.ts,.tsx --ignore-path ../../.eslintignore --max-warnings=0 ./",
     "prepack": "yarn build",
@@ -30,5 +34,8 @@
     "react": "*",
     "react-dom": "*"
   },
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.0",
+  "publishConfig": {
+    "directory": "_release/package"
+  }
 }

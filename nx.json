@@ -16,6 +16,12 @@
         "projects": "dependencies"
       }
     ],
+    "build-publishable-release": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ],
     "prepack": [
       {
         "target": "clean",
@@ -27,6 +33,12 @@
       },
       {
         "target": "prepack",
+        "projects": "dependencies"
+      }
+    ],
+    "prepublish": [
+      {
+        "target": "prepublish",
         "projects": "dependencies"
       }
     ]
