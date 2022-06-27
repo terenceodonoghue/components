@@ -16,11 +16,9 @@
   ],
   "scripts": {
     "build": "tsc",
-    "build-publishable-release": "rimraf ./_release && yarn pack && mkdir ./_release && tar zxvf ./package.tgz --directory ./_release && rm ./package.tgz",
+    "build-publishable-release": "yarn lint && yarn build && rimraf ./_release && yarn pack && mkdir ./_release && tar zxvf ./package.tgz --directory ./_release && rm ./package.tgz",
     "clean": "rimraf ./dist",
-    "lint": "eslint --ext .js,.ts,.tsx --ignore-path ../../.eslintignore --max-warnings=0 ./",
-    "prepack": "yarn build",
-    "prepublish": "yarn lint"
+    "lint": "eslint --ext .js,.ts,.tsx --ignore-path ../../.eslintignore --max-warnings=0 ./"
   },
   "dependencies": {
     "@terenceodonoghue/web-components": "workspace:^"
