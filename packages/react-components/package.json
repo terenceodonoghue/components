@@ -1,6 +1,11 @@
 {
   "name": "@terenceodonoghue/react-components",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/terenceodonoghue/components.git",
+    "directory": "packages/react-components"
+  },
   "exports": {
     "./velocity": "./dist/velocity/index.js"
   },
