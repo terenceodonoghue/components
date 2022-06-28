@@ -7,7 +7,7 @@ template.innerHTML = `
     ::slotted(button) {
       background-color: #2E5BFF;
       border: none;
-      border-radius: 8px;
+      border-radius: 4px;
       color: white;
       cursor: pointer;
       font-family: Rubik, sans-serif;
