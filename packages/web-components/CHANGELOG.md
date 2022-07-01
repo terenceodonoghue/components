@@ -1,5 +1,11 @@
 # @terenceodonoghue/web-components
 
+## 1.0.2
+
+### Patch Changes
+
+- 02f4b72: Reduce button padding
+
 ## 1.0.1
 
 ### Patch Changes

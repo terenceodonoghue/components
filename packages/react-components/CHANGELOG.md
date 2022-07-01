@@ -1,5 +1,13 @@
 # @terenceodonoghue/react-components
 
+## 1.0.2
+
+### Patch Changes
+
+- 2ec8f1c: Move WC import into useEffect hook
+- Updated dependencies [02f4b72]
+  - @terenceodonoghue/web-components@1.0.2
+
 ## 1.0.1
 
 ### Patch Changes
