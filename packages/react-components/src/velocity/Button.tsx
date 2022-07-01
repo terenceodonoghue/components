@@ -4,13 +4,14 @@ import React, {
   useEffect,
 } from 'react';
 import register from '@terenceodonoghue/web-components';
-import { Button as WcButton } from '@terenceodonoghue/web-components/velocity';
 
 const Button: FunctionComponent<ButtonHTMLAttributes<HTMLButtonElement>> = (
   props,
 ) => {
   useEffect(() => {
-    register('wc-button', WcButton);
+    import('@terenceodonoghue/web-components/velocity').then(
+      ({ Button: Component }) => register('wc-button', Component),
+    );
   }, []);
 
   return (
