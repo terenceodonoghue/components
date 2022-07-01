@@ -14,7 +14,7 @@ template.innerHTML = `
       font-size: ${rem(15)};
       font-weight: 500;
       line-height: ${rem(21)};
-      padding: 12px;
+      padding: 10px;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     }
 
