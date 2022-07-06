@@ -9,6 +9,7 @@ declare global {
   namespace JSX {
     interface IntrinsicElements {
       'wc-button': CustomElement;
+      'wc-text-field': CustomElement;
     }
   }
 }
