@@ -15,7 +15,7 @@ template.innerHTML = `
       font-weight: 500;
       line-height: ${rem(21)};
       padding: 10px;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     ::slotted(button:hover) {
