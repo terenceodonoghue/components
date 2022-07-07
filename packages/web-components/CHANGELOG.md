@@ -1,5 +1,12 @@
 # @terenceodonoghue/web-components
 
+## 1.1.0
+
+### Minor Changes
+
+- 3eb712f: Add wc-text-field component
+- 39329b9: Add outlined, text variants to wc-button
+
 ## 1.0.2
 
 ### Patch Changes

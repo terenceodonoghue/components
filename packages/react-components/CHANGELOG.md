@@ -1,5 +1,19 @@
 # @terenceodonoghue/react-components
 
+## 1.1.0
+
+### Minor Changes
+
+- 9465532: Add TextField component
+
+### Patch Changes
+
+- 97684da: Add ButtonProps interface
+- cb13780: Add `style` prop to components
+- Updated dependencies [3eb712f]
+- Updated dependencies [39329b9]
+  - @terenceodonoghue/web-components@1.1.0
+
 ## 1.0.2
 
 ### Patch Changes
