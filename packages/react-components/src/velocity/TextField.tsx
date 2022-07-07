@@ -9,7 +9,11 @@ export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string;
 }
 
-const TextField: FunctionComponent<TextFieldProps> = ({ label, ...props }) => {
+const TextField: FunctionComponent<TextFieldProps> = ({
+  label,
+  style,
+  ...props
+}) => {
   useEffect(() => {
     import('@terenceodonoghue/web-components/velocity').then(
       ({ TextField: Component }) => register('wc-text-field', Component),
@@ -17,7 +21,7 @@ const TextField: FunctionComponent<TextFieldProps> = ({ label, ...props }) => {
   }, []);
 
   return (
-    <wc-text-field label={label}>
+    <wc-text-field style={style} label={label}>
       <input slot="input" {...props} />
     </wc-text-field>
   );

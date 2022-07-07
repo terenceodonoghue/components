@@ -5,9 +5,15 @@ import React, {
 } from 'react';
 import register from '@terenceodonoghue/web-components';
 
-const Button: FunctionComponent<ButtonHTMLAttributes<HTMLButtonElement>> = (
-  props,
-) => {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: 'contained' | 'outlined' | 'text';
+}
+
+const Button: FunctionComponent<ButtonProps> = ({
+  style,
+  variant,
+  ...props
+}) => {
   useEffect(() => {
     import('@terenceodonoghue/web-components/velocity').then(
       ({ Button: Component }) => register('wc-button', Component),
@@ -15,7 +21,7 @@ const Button: FunctionComponent<ButtonHTMLAttributes<HTMLButtonElement>> = (
   }, []);
 
   return (
-    <wc-button>
+    <wc-button style={style} variant={variant}>
       <button slot="button" type="button" {...props} />
     </wc-button>
   );
