@@ -7,6 +7,7 @@ template.innerHTML = `
     label {
       color: #B0BAC9;
       display: inline-block;
+      font-family: Rubik, sans-serif;
       font-size: ${rem(12)};
       font-weight: 500;
       letter-spacing: 1.2px;
