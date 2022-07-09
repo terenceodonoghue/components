@@ -30,7 +30,7 @@ template.innerHTML = `
     }
 
     @media (min-width: 768px) {
-      .card {
+      :host {
           margin: 12px;
       }
     }
