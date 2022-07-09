@@ -1,5 +1,11 @@
 # @terenceodonoghue/web-components
 
+## 1.2.1
+
+### Patch Changes
+
+- cd94bc5: Fix card margins
+
 ## 1.2.0
 
 ### Minor Changes

@@ -1,5 +1,12 @@
 # @terenceodonoghue/react-components
 
+## 1.2.1
+
+### Patch Changes
+
+- Updated dependencies [cd94bc5]
+  - @terenceodonoghue/web-components@1.2.1
+
 ## 1.2.0
 
 ### Minor Changes
