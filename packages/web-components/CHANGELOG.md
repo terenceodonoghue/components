@@ -1,5 +1,15 @@
 # @terenceodonoghue/web-components
 
+## 1.2.0
+
+### Minor Changes
+
+- 5ba4082: Add wc-card component
+
+### Patch Changes
+
+- e4f2d86: Set correct font-family on wc-text-field
+
 ## 1.1.0
 
 ### Minor Changes

@@ -1,5 +1,17 @@
 # @terenceodonoghue/react-components
 
+## 1.2.0
+
+### Minor Changes
+
+- 640f988: Add Card component
+
+### Patch Changes
+
+- Updated dependencies [e4f2d86]
+- Updated dependencies [5ba4082]
+  - @terenceodonoghue/web-components@1.2.0
+
 ## 1.1.0
 
 ### Minor Changes
