@@ -1,5 +1,11 @@
 # @terenceodonoghue/react-components
 
+## 1.2.2
+
+### Patch Changes
+
+- a99df41: Map className prop to class attribute
+
 ## 1.2.1
 
 ### Patch Changes
