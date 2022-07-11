@@ -22,6 +22,7 @@ template.innerHTML = `
       font-weight: 400;
       margin: 0 0 24px;
       letter-spacing: 1.2px;
+      line-height: ${rem(15)};
       text-transform: uppercase;
     }
 
