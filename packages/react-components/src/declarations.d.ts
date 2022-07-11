@@ -1,7 +1,10 @@
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
 
 type CustomElement<T = unknown> = T &
-  DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>;
+  DetailedHTMLProps<
+    HTMLAttributes<HTMLElement> & { class?: string },
+    HTMLElement
+  >;
 
 declare global {
   namespace JSX {

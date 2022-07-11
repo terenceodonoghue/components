@@ -1,18 +1,17 @@
-import React, {
-  FunctionComponent,
-  useEffect,
-  ReactNode,
-  CSSProperties,
-} from 'react';
+import React, { FunctionComponent, HTMLAttributes, useEffect } from 'react';
 import register from '@terenceodonoghue/web-components';
 
-export interface CardProps {
-  children?: ReactNode;
+export interface CardProps extends HTMLAttributes<HTMLDivElement> {
   heading?: string;
-  style?: CSSProperties;
 }
 
-const Card: FunctionComponent<CardProps> = ({ children, heading, style }) => {
+const Card: FunctionComponent<CardProps> = ({
+  children,
+  className,
+  heading,
+  style,
+  ...props
+}) => {
   useEffect(() => {
     import('@terenceodonoghue/web-components/velocity').then(
       ({ Card: Component }) => register('wc-card', Component),
@@ -20,8 +19,10 @@ const Card: FunctionComponent<CardProps> = ({ children, heading, style }) => {
   }, []);
 
   return (
-    <wc-card style={style} heading={heading}>
-      <div slot="content">{children}</div>
+    <wc-card class={className} style={style} heading={heading}>
+      <div slot="content" {...props}>
+        {children}
+      </div>
     </wc-card>
   );
 };

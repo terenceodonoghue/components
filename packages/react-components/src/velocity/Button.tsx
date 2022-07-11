@@ -10,6 +10,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button: FunctionComponent<ButtonProps> = ({
+  className,
   style,
   variant,
   ...props
@@ -21,7 +22,7 @@ const Button: FunctionComponent<ButtonProps> = ({
   }, []);
 
   return (
-    <wc-button style={style} variant={variant}>
+    <wc-button class={className} style={style} variant={variant}>
       <button slot="button" type="button" {...props} />
     </wc-button>
   );

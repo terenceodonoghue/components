@@ -10,6 +10,7 @@ export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 const TextField: FunctionComponent<TextFieldProps> = ({
+  className,
   label,
   style,
   ...props
@@ -21,7 +22,7 @@ const TextField: FunctionComponent<TextFieldProps> = ({
   }, []);
 
   return (
-    <wc-text-field style={style} label={label}>
+    <wc-text-field class={className} style={style} label={label}>
       <input slot="input" {...props} />
     </wc-text-field>
   );
