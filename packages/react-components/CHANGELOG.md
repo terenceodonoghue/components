@@ -1,5 +1,12 @@
 # @terenceodonoghue/react-components
 
+## 1.2.3
+
+### Patch Changes
+
+- Updated dependencies [cf55eb1]
+  - @terenceodonoghue/web-components@1.2.2
+
 ## 1.2.2
 
 ### Patch Changes

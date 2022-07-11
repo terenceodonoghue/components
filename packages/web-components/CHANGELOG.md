@@ -1,5 +1,11 @@
 # @terenceodonoghue/web-components
 
+## 1.2.2
+
+### Patch Changes
+
+- cf55eb1: Fix line-height in wc-card
+
 ## 1.2.1
 
 ### Patch Changes
