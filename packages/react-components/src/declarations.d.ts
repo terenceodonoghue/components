@@ -11,6 +11,7 @@ declare global {
     interface IntrinsicElements {
       'wc-button': CustomElement<{ variant?: string }>;
       'wc-card': CustomElement<{ heading?: string }>;
+      'wc-switch': CustomElement;
       'wc-text-field': CustomElement<{ label?: string }>;
     }
   }
