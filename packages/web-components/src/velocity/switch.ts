@@ -8,7 +8,6 @@ template.innerHTML = `
       align-items: center;
       display: flex;
       justify-content: center;
-      user-select: none;
     }
 
     span {
