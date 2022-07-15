@@ -64,24 +64,5 @@ export default class extends HTMLElement {
 
     this.attachShadow({ mode: 'open' });
     this.shadowRoot?.appendChild(template.content.cloneNode(true));
-
-    const gstatic = document.createElement('link');
-    const googleapis = document.createElement('link');
-    const stylesheet = document.createElement('link');
-
-    gstatic.rel = 'preconnect';
-    gstatic.href = 'https://fonts.gstatic.com';
-    gstatic.crossOrigin = 'true';
-
-    googleapis.rel = 'preconnect';
-    googleapis.href = 'https://fonts.googleapis.com';
-
-    stylesheet.rel = 'stylesheet';
-    stylesheet.href =
-      'https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap';
-
-    [gstatic, googleapis, stylesheet].forEach((link) =>
-      document.head.appendChild(link),
-    );
   }
 }
