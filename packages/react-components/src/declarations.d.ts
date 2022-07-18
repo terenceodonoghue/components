@@ -9,6 +9,7 @@ type CustomElement<T = unknown> = T &
 declare global {
   namespace JSX {
     interface IntrinsicElements {
+      'wc-avatar': CustomElement<{ size?: number; variant?: string }>;
       'wc-button': CustomElement<{ variant?: string }>;
       'wc-card': CustomElement<{ heading?: string }>;
       'wc-slider': CustomElement;
