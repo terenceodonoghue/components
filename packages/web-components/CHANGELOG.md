@@ -1,5 +1,17 @@
 # @terenceodonoghue/web-components
 
+## 1.3.0
+
+### Minor Changes
+
+- 2f109bc: Add wc-switch component
+- fd5d74d: Add wc-slider component
+- a88ed55: Add wc-avatar component
+
+### Patch Changes
+
+- 94189c2: Remove unused CSS/font imports from wc-switch
+
 ## 1.2.2
 
 ### Patch Changes

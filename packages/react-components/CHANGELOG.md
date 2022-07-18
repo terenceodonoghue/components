@@ -1,5 +1,21 @@
 # @terenceodonoghue/react-components
 
+## 1.3.0
+
+### Minor Changes
+
+- 1978b70: Add Slider component
+- 516429a: Add Avatar component
+- 58effe9: Add Switch component
+
+### Patch Changes
+
+- Updated dependencies [2f109bc]
+- Updated dependencies [fd5d74d]
+- Updated dependencies [a88ed55]
+- Updated dependencies [94189c2]
+  - @terenceodonoghue/web-components@1.3.0
+
 ## 1.2.3
 
 ### Patch Changes
