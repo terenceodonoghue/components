@@ -1,5 +1,11 @@
 # @terenceodonoghue/web-components
 
+## 1.3.1
+
+### Patch Changes
+
+- 1a23ee7: Adjust avatar sizing behaviour
+
 ## 1.3.0
 
 ### Minor Changes
