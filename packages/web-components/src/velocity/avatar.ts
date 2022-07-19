@@ -1,8 +1,12 @@
-/* eslint-disable no-param-reassign */
 const template = document.createElement('template');
 
 template.innerHTML = `
   <style>
+    ::slotted(img) {
+      height: 100%;
+      width: 100%;
+    }
+
     ::slotted(img.rounded) {
       border-radius: 50%;
     }
@@ -28,22 +32,18 @@ export default class extends HTMLElement {
   }
 
   attributeChangedCallback(name: string, oldValue: string, newValue: string) {
-    const nodes = (
-      this.shadowRoot?.getElementById('img') as HTMLSlotElement
-    ).assignedNodes() as HTMLImageElement[];
-
     switch (name) {
       case 'size': {
-        nodes.forEach((node) => {
-          if (oldValue !== newValue) {
-            node.style.height = newValue.concat('px');
-            node.style.width = newValue.concat('px');
-          }
-        });
+        this.style.height = newValue.concat('px');
+        this.style.width = newValue.concat('px');
 
         break;
       }
       case 'variant': {
+        const nodes = (
+          this.shadowRoot?.getElementById('img') as HTMLSlotElement
+        ).assignedNodes() as HTMLImageElement[];
+
         nodes?.forEach((node) => {
           if (oldValue !== newValue) {
             node.classList.remove(oldValue);
