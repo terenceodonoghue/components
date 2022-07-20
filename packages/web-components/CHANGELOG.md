@@ -1,5 +1,11 @@
 # @terenceodonoghue/web-components
 
+## 1.3.2
+
+### Patch Changes
+
+- b4d4623: Add display property to avatar
+
 ## 1.3.1
 
 ### Patch Changes
