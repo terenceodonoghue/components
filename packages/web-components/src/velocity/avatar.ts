@@ -2,6 +2,10 @@ const template = document.createElement('template');
 
 template.innerHTML = `
   <style>
+    :host {
+      display: block;
+    }
+
     ::slotted(img) {
       height: 100%;
       width: 100%;
